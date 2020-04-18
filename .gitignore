@@ -1,5 +1,4 @@
-/
-/target/
-**
-/.project
-/.classpath
+*
+/target
+*/.project
+*/.classpath
