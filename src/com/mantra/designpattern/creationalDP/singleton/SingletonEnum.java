@@ -1,4 +1,4 @@
-package com.mantra.designpattern.creationalDP;
+package com.mantra.designpattern.creationalDP.singleton;
 
 enum Singleton {
 	
