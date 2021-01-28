@@ -1,7 +1,7 @@
 package com.test;
 
 public class MyThread1 implements Runnable {
-	public volatile static int  i = 1;
+	public  static int  i = 1;
 	public static int target = 20;
 
 	@Override
