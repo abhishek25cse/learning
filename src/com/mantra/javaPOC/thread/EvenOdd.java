@@ -18,8 +18,7 @@ class OddEvenMoniter implements Runnable {
 	public void run() {
 		while (count < 20) {
 			try {
-				turnManager();
-				
+				turnManager();				
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -28,35 +27,29 @@ class OddEvenMoniter implements Runnable {
 	}
 	
 	public  void printEven() throws InterruptedException {
-		System.out.println(Thread.currentThread().getName()+"----" + count);	
-	}
-
-	public  void printOdd() throws InterruptedException {
-		System.out.println(Thread.currentThread().getName()+"		------" + count);		
-	}
+		System.out.println(Thread.currentThread().getName()+" " + count);	
+	}	
 
 	public synchronized void turnManager() throws InterruptedException {
 		if (count % 2 == 0 && Thread.currentThread().getName().equals("Even")) {
 			try {
 				this.printEven();
 				count++;
-				wait(10);
+				wait();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 				
 		} else if(count % 2 == 1 && Thread.currentThread().getName().equals("Odd")) {
 			try {
-				this.printOdd();
+				this.printEven();
 				count++;
 				notify();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			
-		} else {
-			//System.out.println("SKIP**************");
-		}
+		} 
 	}
 
 }
