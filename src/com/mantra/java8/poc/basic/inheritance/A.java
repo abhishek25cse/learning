@@ -5,6 +5,8 @@ public class A implements I1 {
 	void callMe() {
 		m();
 	}
+	
+	
 
 	@Override
 	public void getDetail() {
@@ -12,3 +14,5 @@ public class A implements I1 {
 		
 	}
 }
+
+
