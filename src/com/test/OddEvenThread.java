@@ -1,7 +1,7 @@
 package com.test;
 
 public class OddEvenThread {
-
+// This does not work
 	public static void main(String[] args) throws InterruptedException {
 		MyThread1 odd = new MyThread1();
 
