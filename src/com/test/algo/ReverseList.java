@@ -33,11 +33,15 @@ public class ReverseList {
 			return node;
 		}
 		Node<String> reversedNode  = reverseList(node.getNext());
+		
+		// very beautiful step
 		node.getNext().setNext(node);
+		
 		node.setNext(null);
-		System.out.println(" 1 "+reversedNode);				
-		System.out.println(" 2 "+reversedNode);		
-		System.out.println(" 3 "+node);
+		/*
+		 * System.out.println(" 1 "+reversedNode);
+		 * System.out.println(" 2 "+reversedNode); System.out.println(" 3 "+node);
+		 */
 		return reversedNode;
 	}
 	

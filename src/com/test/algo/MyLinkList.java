@@ -38,7 +38,7 @@ public class MyLinkList<T> {
 
 	@Override
 	public String toString() {
-		return "MyLinkList " + head + "]";
+		return "MyLinkList " + head ;
 	}
 	
 }
