@@ -1,0 +1,150 @@
+@Service
+EmployeeService {
+
+@Autowired
+private EmployeePay employeePay;
+
+
+
+}
+
+@Service
+piblic clasEmployeePay {
+    @Autowired
+    EmployeeService employeeService;
+    
+}
+
+************************
+
+class1
+
+Class2
+
+Class3
+
+priiotty
+*******
+
+
+top 10 in 30 minute
+
+orderdetail {
+        
+}
+--------------------------
+order table   -- table 
+
+prodID, qty , timeStamp
+
+-- this overhead
+-- data 
+
+
+---------------------------
+
+
+
+hashmap<prodId, Intger>
+
+productid, productname , qty
+
+queue -- 
+
+pub - sub (kafka)  --> 
+        consumer (table (productid. name, quantity, timestamp) - nosql - mongo
+        -->  
+        
+        productid
+
+
+
+view -- top n product in last y minutes
+
+--  async /event setrive , 
+store the data 
+
+server1  -- 10  --> cache
+server2
+.
+.
+.
+.
+server 10   -- 10 --> cache
+
+
+pub-sub   --> consumer ( (table (productid. name, quantity, timestamp))  #mongo
+          --> 
+          
+          
+          
+          
+prod qty  time
+1     2     9
+2     1     9
+1     4     9:01
+1     2     9
+2     1     9
+1     4     9:01
+
+JOB : data remove - > 30 minute  
+
+9: 0  --> rremove 8:29
+
+
+9: 29   -> 8:30 - 9:29
+9:30    ==>  
+
+
+
+
+DB 
+prod qty  time
+1     2     9
+2     1     9
+1     4     9:01
+1     2     9
+2     1     9
+1     4     9:01
+
+
+
+
+Serive :
+prod qty  
+1     12    
+2     2    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

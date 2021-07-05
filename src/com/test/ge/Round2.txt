@@ -1,0 +1,52 @@
+// sorting api
+input = list of integer
+return sorted list
+
+
+@RestController
+@Request
+
+*************************************
+HttpMethod : HttpMethod.POST
+API   : api/numbers/sort
+Input :
+RequestBody :   <List of Integer>
+[1,2,3]
+
+
+Output : <LIST of Sorted Integer>
+Response : 
+Status/Message   						:  Body
+
+200/Success										[1,2,3]
+500/Internal Server Error  		
+3xx/Custom Error Message			[]					
+
+**************************************
+
+
+xyz  : [ 
+					{"name" : "A", "add": "A1"},
+					{"name" : "B", "add": "B1"}				
+       ]
+
+
+
+ACID : 
+
+CommitFlag : 
+Supervisor :  {
+module1 :          T
+Module2 :					 T
+Modlul3 : 				 F
+}
+									UseCase1				UseCae2
+	Flow 1 :  
+  			Module1 :   200/T					200	/T
+        
+        Module2 :		200	/T					200 /T	        
+        
+        Module3 : 	500	/F				  200 /T
+
+
+
