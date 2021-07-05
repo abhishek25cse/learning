@@ -33,7 +33,7 @@ public class LRUCache {
 		linkedList.addLast(page);
 		hashSet.add(page);
 		
-		System.out.println(page +" is found = "+isFound + "     ");
+		System.out.println("       "+page +" is found = "+isFound + "     ");
 		display();
 		return isFound;
 	}
