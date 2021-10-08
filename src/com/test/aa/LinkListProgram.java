@@ -12,13 +12,9 @@ public class LinkListProgram {
 	//2,8,5,6,7,5,3,9
 	//ouput
 
-	k =2
-	n  = 2, 3
-	counter = 0
-	size = 8
-	swap1
-	swap2
-	temp
+	/*
+	 * k =2 n = 2, 3 counter = 0 size = 8 swap1 swap2 temp
+	 */
 	public static ListNode swapNodes(ListNode head, int k) {	
 		ListNode n = head;
 		int counter = 0;

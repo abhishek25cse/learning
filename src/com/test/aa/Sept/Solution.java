@@ -1,6 +1,5 @@
 package com.test.aa.Sept;
 
-import java.util.Arrays;
 import java.util.HashSet;
 
 class Solution {
@@ -11,8 +10,8 @@ class Solution {
     	 HashSet<Character> charAdded = new HashSet<Character>();    	 
     	 for(String a : A) {
     		// System.out.println(charAdded +" HashSet");
-    		//System.out.println(a +" The Sring opertation  "+this.findCommonChar(a, charAdded));
-    		 this.findCommonChar(a, charAdded)
+    		//System.out.println(a +" The String opertation  "+this.findCommonChar(a, charAdded));
+    		 this.findCommonChar(a, charAdded);
     	 }
     	 return charAdded.size();
     }
