@@ -1,7 +1,5 @@
 package com.check;
 
-import com.test.oracle.MapValue;
-
 public class MapEntrySet {
 	
 	MapKey key;
