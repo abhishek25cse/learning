@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.test.oracle.MapValue;
+
 public class HashMapImpl implements Serializable{
 	HashMap h = new HashMap();
 	
